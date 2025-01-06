@@ -84,7 +84,7 @@ def create_dns_record(ip: IPv4Address, config: Namespace) -> None:
         "name": config.hostname,
         "type": "A",
         "content": str(ip),
-        "ttl": 60
+        "ttl": "60"
     })
 
 
@@ -94,7 +94,7 @@ def update_dns_record(ip: IPv4Address, record_id: int, config: Namespace) -> Non
         "name": config.host,
         "type": "A",
         "content": str(ip),
-        "ttl": 60
+        "ttl": "60"
     })
 
 
